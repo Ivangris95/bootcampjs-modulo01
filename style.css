@@ -3,5 +3,49 @@
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
-    font-style: normal;
+    box-sizing: content-box;
+}
+body{
+    padding: 0 20px 0 20px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+nav{
+    font-size: 16px;
+}
+h2{
+    font-size: 32px;
+}
+.moda-main{
+    font-size: 14px;
+}
+button{
+    border: none;
+    outline: none;
+}
+.nav-bar{
+    display: flex;
+}
+
+.moda-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px 10% 0 10%;
+}
+.item-form{
+    background-color: #212429;
+    height: 5em;
+}
+.item-form img{
+    height: 2em;
+}
+.icons{
+    height: 2.5em;
+    background-color: #fff;
+}
+.item-form a{
+    color: #fff;
+    background-color: #212429;
 }
