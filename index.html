@@ -9,24 +9,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
 
 </head>
 <body>
     <nav>
         <div class="nav-bar">
-            <div>
-                <button><img src="icons/icon-menu-burguer.svg" alt=""></button>
+            <div class="menu-icon">
+                <button type="button"><img src="icons/icon-menu-burguer.svg" alt="">
+                    <ul>
+                        <li><a href="">MODA MUJER</a></li>
+                        <li><a href="">MODA HOMBRE</a></li>
+                        <li><a href="">NUEVA COLECCION</a></li>
+                        <div><a href="">COLECCIONES ESPECIALES</a></div>
+                    </ul>
+                </button>
             </div>
-            <div>
+            <div class="item-header">
                 <a href="">MODA MUJER</a>
                 <a href="">MODA HOMBRE</a>
                 <a href="">NUEVA COLECCION</a>
                 <a href="">COLECCIONES ESPECIALES</a>
             </div>
-            <div>
-                <button><img src="icons/icon-user.svg" alt=""></button>
-                <button><img src="icons/icon-heart.svg" alt=""></button>
-                <button><img src="icons/icon-shopping-cart.svg" alt=""></button>
+            <div class="icons">
+                <button type="button"><img src="icons/icon-user.svg" alt=""></button>
+                <button type="button"><img src="icons/icon-heart.svg" alt=""></button>
+                <button type="button"><img src="icons/icon-shopping-cart.svg" alt=""></button>
             </div>
         </div>
         <hr>
@@ -34,25 +44,33 @@
     <main>
         <h2>Nuevas colecciones</h2>
         <div class="moda-main">
-            <div class="container"><img src="img/image-01.jpg" alt="Vestido color turquesa con tirantes"><p>Vestido <b>34.99€</b></p></div>
-            <div class="container"><img src="img/image-02.jpg" alt="Camisa de mujer color amarillo"><p>Camisa 44.99€</p></div>
-            <div class="container"><img src="img/image-03.jpg" alt="Vaqueros de mujer blancos">VAqueros 79.99€</div>
-            <div class="container"><img src="img/image-04.jpg" alt="Polo para hombre color marron claro">Polo 44.95€</div>
-            <div class="container"><img src="img/image-05.jpg" alt="Camisa para hombre color beige">Camisa 25.00€</div>
-            <div class="container"><img src="img/image-06.jpg" alt="Camiseta para hombre color blanca">Camiseta 22.99€</div>
+            
+            <div class="container"><img src="img/image-01.jpg" alt="Vestido color turquesa con tirantes"><p>Vestido <span>34.99€</span></p></div>
+            <div class="container"><img src="img/image-02.jpg" alt="Camisa de mujer color amarillo"><p>Camisa <span>44.99€</span></p></div>
+            <div class="container"><img src="img/image-03.jpg" alt="Vaqueros de mujer blancos"><p>Vaqueros <span>79.99€</span></p></div>
+            <div class="container"><img src="img/image-04.jpg" alt="Polo para hombre color marron claro"><p>Polo <span>44.95€</span></p></div>
+            <div class="container"><img src="img/image-05.jpg" alt="Camisa para hombre color beige"><p>Camisa <span>25.00€</span></p></div>
+            <div class="container"><img src="img/image-06.jpg" alt="Camiseta para hombre color blanca"><p>Camiseta <span>22.99€</span></p></div>
+            
         </div>
     </main>
     <footer>
-        <div class="item-form">
-            <div class="icons">
-                <img src="icons/icon-truck.svg" alt="">
+        <div class="item-footer">
+            <div class="icons-footer">
+                <span><img src="icons/icon-truck.svg" alt=""></span>
+                <a href="">Entrega</a>         
             </div>
-            <a href="">Entrega</a>
-            <a href="">Deoluviones y cambios</a>
-            <img src="icons/icon-phone.svg" alt="">
-            <a href="">+375 (29) 749-18-23</a>
-            <img src="icons/icon-mail.svg" alt="">
-            <a href=""></a>
+            <div class="icons-footer">
+                <a href="">Deoluviones y cambios</a>
+            </div>
+            <div class="icons-footer">
+                <span><img src="icons/icon-phone.svg" alt=""></span>
+                <a href="">+375 (29) 749-18-23</a>
+            </div>
+            <div class="icons-footer">
+                <span><img src="icons/icon-mail.svg" alt=""></span>
+                <a href="">shop@omix.com</a>
+            </div>
         </div>
     </footer>
 </body>
