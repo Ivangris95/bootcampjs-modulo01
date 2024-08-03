@@ -4,7 +4,7 @@
 }
 body{
     background-color: #fff;
-    
+    z-index: 0;
 }
 a{
     text-decoration: none;
@@ -25,6 +25,10 @@ button{
     border: none;
     outline: none;
 }
+
+
+/* Class and id */
+
 .nav-bar{
     display: flex;
     height: 4.5em;
@@ -38,8 +42,36 @@ button{
     font-optical-sizing: auto;
     font-weight: 400;
 }
-.menu-icon ul{
-    display: none;
+.menu-dropdown{
+    display: flex;
+    visibility: hidden;
+    transition-delay: 3s;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    position: absolute;
+    padding-top: 10px;
+    list-style: none;
+    margin: 10px 10px 10px 10px;
+    background-color: rgba(255, 255, 255, 0.842);
+    border-radius: 2px;
+    width: 200px;
+    right: 30%;
+    transform: translate(50%, 10%);
+    
+} 
+.menu-dropdown li{
+    padding: 20px 20px 20px 10px;
+    background-color: rgba(255, 255, 255, 0.842);
+
+} 
+.menu-dropdown ul{
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.842);
+
+}
+.item-header{
+    visibility: hidden;
+    transition-delay: 3s;
 }
 .moda-main{
     font-size: 14px;
@@ -101,13 +133,22 @@ button{
 .icons img{
     transition: transform 0.3s ease;
 }
-.menu-icon img:hover{
-    background-color: rgba(0, 0, 0, 0.04);
+
+/* Animations */
+
+.menu-icon:active + .item-header{
+    visibility: visible;
+    transition: 2s ease;
+}
+.item-header:hover{
+    visibility: visible;
+}
+.menu-icon:hover{
     border-radius: 5px;
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 .icons img:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 .item-header a:hover{
     color: rgba(0, 0, 0, 0.5);
@@ -118,6 +159,9 @@ button{
 .container img:hover{
     transform: scale(0.9);
 }
+
+/* Resonsive */
+
 @media (max-width: 920px){
     body{
         overflow-x: hidden;
@@ -130,6 +174,13 @@ button{
     }
     .menu-icon{
         margin: 0 auto;    
+    }
+    .menu-icon:active{
+        transform: scale(1.2);
+    }
+    .menu-icon:active .menu-dropdown{
+        visibility: visible;
+        transition: 2s;
     }
     .item-header{
         display: none;
